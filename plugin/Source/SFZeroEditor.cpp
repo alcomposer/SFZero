@@ -161,7 +161,7 @@ void sfzero::SFZeroEditor::timerCallback()
 
 void sfzero::SFZeroEditor::chooseFile()
 {
-  FileChooser chooser("Select an SFZ file...", File::nonexistent, "*.sfz;*.SFZ;*.sf2;*.SF2");
+  FileChooser chooser("Select an SFZ file...", File::nonexistent, "*.sfz;*.SFZ;*.sf2;*.SF2", false, false);
 
   if (chooser.browseForFileToOpen())
   {
